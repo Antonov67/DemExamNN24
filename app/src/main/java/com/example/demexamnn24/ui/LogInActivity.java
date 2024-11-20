@@ -51,7 +51,6 @@ public class LogInActivity extends AppCompatActivity {
         API api = retrofit.create(API.class);
 
         //авторизуем юзера на сервере
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
