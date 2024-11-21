@@ -7,6 +7,7 @@ import static com.example.demexamnn24.utils.Utils.GRANT_TYPE;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +30,7 @@ public class LogInActivity extends AppCompatActivity {
 
     TextInputLayout email, pswrd;
     MaterialButton button;
+    TextView textView;
     Retrofit retrofit;
 
     @Override
@@ -38,6 +40,7 @@ public class LogInActivity extends AppCompatActivity {
         email = findViewById(R.id.logInEmailAddress);
         pswrd = findViewById(R.id.LoginPasswordTextInputLayout);
         button = findViewById(R.id.button_signin);
+
 
         //Заполним данными из предыдущего окна
         email.getEditText().setText(Utils.user.getEmail());

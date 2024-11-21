@@ -24,6 +24,4 @@ public interface API {
     //отправка кода на почту для восстановления пароля
     @POST("recover")
     Call<Void> sendCode(@Header("apikey") String apikey, @Body Email email);
-
-
 }

@@ -91,7 +91,6 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onFailure(Call<ResponseUser> call, Throwable t) {
 
-
                             Toast.makeText(SignUpActivity.this, t.getMessage().toString(), Toast.LENGTH_SHORT).show();
                         }
                     });
