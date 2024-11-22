@@ -10,4 +10,6 @@ public class Utils {
     public static final String BASE_URL = "https://zsubenxrmoboqriqsklg.supabase.co/auth/v1/";
     public static final String GRANT_TYPE = "password";
 
+    public static String TOKEN = "";
+
 }

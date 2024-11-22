@@ -61,7 +61,9 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                         Toast.makeText(ForgotPasswordActivity.this, "Send OK", Toast.LENGTH_SHORT).show();
                         //Если почта корректна, то переходим на OTP Verification
                         if (isEmailValid(String.valueOf(emailField.getEditText().getText()))){
-                            startActivity(new Intent(ForgotPasswordActivity.this, OTPVerificationActivity.class));
+                            Intent intent = new Intent(ForgotPasswordActivity.this, OTPVerificationActivity.class);
+                            intent.putExtra("email", emailField.getEditText().getText().toString());
+                            startActivity(intent);
                         }
                     }
 
